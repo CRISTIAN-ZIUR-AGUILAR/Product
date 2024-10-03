@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Categorías</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categoria of categorias">
+        <td>{{ categoria.nombre }}</td>
+        <td>{{ categoria.descripcion }}</td>
+        <td>
+          <ion-button (click)="cargarCategoria(categoria)">Editar</ion-button>
+          <ion-button color="danger" (click)="eliminarCategoria(categoria.id)">Eliminar</ion-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="categoria.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descripción</ion-label>
+    <ion-input [(ngModel)]="categoria.descripcion"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="isEditing ? actualizarCategoria() : agregarCategoria()">
+    {{ isEditing ? 'Actualizar Categoría' : 'Agregar Categoría' }}
+  </ion-button>
+</ion-content>

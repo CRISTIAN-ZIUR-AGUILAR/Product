@@ -1,0 +1,47 @@
+table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    margin: 20px 0; /* Añade un margen vertical */
+    background-color: #ffffff; /* Color de fondo de la tabla */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el borde redondeado se mantenga */
+  }
+  
+  th, td {
+    padding: 10px; /* Espaciado interno en las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border: 1px solid #ddd; /* Borde de las celdas */
+  }
+  
+  th {
+    background-color: #4CAF50; /* Color de fondo para los encabezados */
+    color: white; /* Color del texto de los encabezados */
+    font-weight: bold; /* Negrita en los encabezados */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para las filas pares */
+  }
+  
+  tr:hover {
+    background-color: #e0f7fa; /* Color de fondo al pasar el ratón sobre las filas */
+  }
+  
+  td {
+    color: #333; /* Color del texto de las celdas */
+  }
+  
+  button {
+    margin: 0 5px; /* Margen entre los botones */
+    background-color: #007BFF; /* Color de fondo para los botones */
+    color: white; /* Color del texto en los botones */
+    border: none; /* Sin borde en los botones */
+    padding: 5px 10px; /* Espaciado interno en los botones */
+    border-radius: 5px; /* Bordes redondeados en los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+  }
+  
